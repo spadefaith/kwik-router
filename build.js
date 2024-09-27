@@ -5,10 +5,11 @@ esbuild
     entryPoints: ["./src/index.ts"],
     bundle: true,
     platform: "browser",
-    minify: true,
+    minify: false,
     outfile: "./dist/bundle.js",
     sourcemap: true,
     globalName: "KwikRouter", // Replace with the desired global variable name
     format: "iife", // Immediately Invoked Function Expression for browser compatibility
   })
+
   .catch(() => process.exit(1));

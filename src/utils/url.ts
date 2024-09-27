@@ -20,6 +20,8 @@ export const parseUrl = (path) => {
       }
       o.searchParams = params.toString();
     }
+
+    o.hash = urlClass.hash;
   }
 
   return o;
